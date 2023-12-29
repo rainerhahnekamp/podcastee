@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:8.2.0'
+    environment:
+      - 'MYSQL_DATABASE=podcastee'
+      - 'MYSQL_PASSWORD=podcastee'
+      - 'MYSQL_ROOT_PASSWORD=podcastee'
+      - 'MYSQL_USER=podcastee'
+    ports:
+      - '3306'
